@@ -1,0 +1,22 @@
+module.exports = {
+	host: 'irc.freenode.net', //hostname of the IRC server
+	port: 6667, //port of the IRC server 
+	autoReconnect: true, //Automatically reconnects
+	nick: 'dunnBot', //Bot nick
+	identPass: 'password', //IDENTIFY password for the nick
+	username: 'dunnBot', //the username
+	realname: 'Powered by #webtech', //"real" name
+	command: '!', //trigger command prefix
+	mysql: {
+		host: 'localhost',
+		port: 3306,
+		user: '',
+		password: '',
+		database: ''
+	}, 
+	channels: ['#webtech'], //channels to load
+	plugins: ['dunn', 'log', 'duckduckgo', 'links', 'pinky', 'rimshot', 'search', 'sup', 'weather'], //plugins to load
+	admins: ['killswitch'], //admins of the bot
+	ops: ['killswitch', 'migs', 'daekano', 'oojacoboo'], // channel ops
+	devs: ['killswitch', 'jesusabdullah'] // dunn devs
+};
